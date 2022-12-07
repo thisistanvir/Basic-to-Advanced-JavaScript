@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Object Model</title>
+</head>
+
+<body>
+  <!-- onclick -->
+  <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+
+  <!-- Assign Events Using the HTML DOM -->
+  <button id="myBtn">click me</button>
+  <script>
+    document.getElementById("myBtn").onclick = changeText;
+    function changeText() {
+      document.getElementById("myBtn").innerHTML = "changed";
+    }
+  </script>
+
+  <!-- onchange -->
+  <div>
+    Input text<input type="text" id="fname" onchange="upperCase()">
+  </div>
+  <script>
+    function upperCase() {
+      const x = document.getElementById("fname");
+      x.value = x.value.toUpperCase();
+    }
+  </script>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
