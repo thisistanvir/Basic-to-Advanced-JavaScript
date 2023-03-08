@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript Output</title>
+	</head>
+	<body>
+		<h3>JavaScript Output</h3>
+		<p>My first paragraph</p>
+
+		<code>using innerHTML</code>
+		<p id="demo"></p>
+		<script>
+			document.getElementById("demo").innerHTML = 5 + 6;
+		</script>
+
+		<hr />
+
+		<code>Using document.write()</code><br />
+		<button type="button" onclick="document.write(5+6)">Try It</button>
+
+		<hr />
+
+		<code>Using window.alert()</code><br />
+		<button type="button" onclick="alert('Warning')">Alert</button>
+
+		<hr />
+
+		<code>Using console.log()</code><br />
+		<script>
+			console.log("Hello World");
+		</script>
+
+		<hr />
+
+		<code>JavaScript Print</code><br />
+		<button type="button" onclick="window.print()">Print this page</button>
+	</body>
+</html>
